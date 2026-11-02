@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Customer Filter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <!-- Lägg din logotyp i samma mapp som HTML-filen -->
+    <img src="logo.png" alt="RECademy logotyp">
+    <h1>Customer List</h1>
+  </header>
+
+  <main>
+    <!-- Dropdown för att välja region -->
+    <label for="regionFilter">Filter by region:</label>
+
+    <select id="regionFilter">
+      <option value="All">All</option>
+      <option value="North">North</option>
+      <option value="South">South</option>
+      <option value="East">East</option>
+      <option value="West">West</option>
+    </select>
+
+    <!-- Sökfält: användaren kan skriva delar av ett kundnamn. -->
+    <label for="nameSearch">Search by name:</label>
+    <input type="search" id="nameSearch" placeholder="Enter a name">
+
+    <!-- Här kommer JavaScript att visa kunderna -->
+    <div id="customerList"></div>
+  </main>
+
+</body>
+</html>
